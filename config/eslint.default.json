@@ -1,0 +1,31 @@
+{
+    "env": {
+        "es2020": true
+    },
+    "rules": {
+        "id-match": [
+            "warn",
+            "^(?:[a-z]*(?:_[a-z]+)*|[A-Z]*(?:_[A-Z]+)*|_)$",
+            {
+                "properties": true
+            }
+        ],
+        "unicorn/filename-case": [
+            "warn",
+            {
+                "cases": {
+                    "snakeCase": true
+                },
+                "ignore": [
+                    "^README.md$"
+                ]
+            }
+        ],
+        "unicorn/prefer-module": [
+            "warn"
+        ]
+    },
+    "plugins": [
+        "unicorn"
+    ]
+}
